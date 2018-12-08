@@ -4,17 +4,21 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "@mdx-js/mdx": "^0.8.0",
     "@mdx-js/tag": "^0.7.2",
     "next": "^5.1.0",
     "react": "^16.3.2",
-    "react-dom": "^16.3.2",
-    "remark-images": "^0.8.0"
+    "react-dom": "^16.3.3",
+    "remark-images": "^0.8.0",
+    "snyk": "^1.116.2"
   },
   "devDependencies": {
     "@mdx-js/loader": "^0.8.0"
-  }
+  },
+  "snyk": true
 }
